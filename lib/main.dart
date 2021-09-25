@@ -14,27 +14,32 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(title: Text("Column"),),
-            body: Column(
-            children: [
-              Container(
-                height: 200,
-                width: 150,
-                color: Colors.deepOrange,
-              ),
-              SizedBox(height: 10,),
+            body: ListView(
+              children: [
+                Column(
+                  children: [
+                    Container(
+                      height: 200,
+                      width: 150,
+                      color: Colors.deepOrange,
+                    ),
+                    SizedBox(height: 30,),
 
-              Container(
-                height: 200,
-                width: 150,
-                color: Colors.amber,
-              ),
-              Container(
-                height: 200,
-                width: 150,
-                color: Colors.green,
-              )
-            ],
-          ),
+                    Container(
+                      height: 200,
+                      width: 150,
+                      color: Colors.amber,
+                    ),
+                    SizedBox(height: 30,),
+                    Container(
+                      height: 200,
+                      width: 150,
+                      color: Colors.green,
+                    )
+                  ],
+                ),
+              ],
+            ),
         ),
       )
     );
